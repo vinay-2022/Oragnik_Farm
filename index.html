@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="img/envoLogo.PNG" alt="">
+        <button class="buy_now">buy now</button>
+    </nav>
+    <!-- mid -->
+    <div id="mid">
+        <div class="imgdiv"> <img class="img13img" src="img/3images.png" alt="body">
+            <img src="img/e1.png" width="130px" height="90px" />
+            <p>#1 MULTIPURPOSE MAGENTO THEME & TEMPLATE</p>
+            <button class="get">GET IT NOW</button>
+
+        </div>
+
+
+
+
+
+
+        <div class="gree_container">
+            <div class="button_container">
+                <button class="learn_more">learn more</button>
+                <button class="buy_this">buy this</button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- slider img -->
+    <div id="slider_img">
+        <div class="tvholder">
+            <div class="img1">
+                <img id="img1o" onmouseenter="mouseinImg('img1o')" onmouseleave="cle('img1o')" src="img/img5.jpg"
+                    alt="i5">
+            </div>
+
+        </div>
+        <div>ORGANIC / FRUIT STORE</div>
+        <div class="tvholder">
+            <div class="img2">
+                <img id="img2o" onmouseenter="mouseinImg('img2o')" onmouseleave="cle('imgo')" src="img/img6.jpg"
+                    alt="i6">
+            </div>
+
+
+        </div>
+        <h2>FLOWER STORE</h2>
+        <div class="tvholder">
+            <div class="img3">
+                <img id="img3o" onmouseenter="mouseinImg('img/img3o')" onmouseleave="cle('img/img3o')"
+                    src="img/img7.jpg" alt="i7">
+            </div>
+        </div>
+        <h2>DETAIL PAGE</h2>
+    </div>
+    <script>
+        //let TimeoutIdArray[]
+        let TimeoutId
+        let imgscrool
+        function mouseinImg(imgId) {
+            clearTimeout(TimeoutId)
+            let imgi = document.getElementById(imgId) || imgscrool
+            imgscrool = imgi
+            to = imgi.style.top.split('px')[0]
+            if (to <= -570) { return }
+            imgi.style.top = `${Number(to) - 10}px`
+            TimeoutId = setTimeout(mouseinImg, 10)
+        }
+
+        function cle(imgId) {
+            clearTimeout(TimeoutId)
+            let imgi = document.getElementById(imgId) || imgscrool
+            imgscrool = imgi
+            to = imgi.style.top.split('px')[0]
+            if (to >= -10) { return }
+            imgi.style.top = `${Number(to) + 10}px`
+            TimeoutId = setTimeout(cle, 10)
+        }
+    </script>
+    <!-- themeFeatures -->
+    <div id="themeFeatures">
+        <div class="tfheading">
+            <div class="tfheading_features">THEME FEATURES</div>
+            <div>Organ Theme has a growing number
+                of amazing, easy features to use, some of most important features are listed here:</div>
+        </div>
+        <div class="cardholder">
+
+            <div><img src="img/c1.png" />
+                <h3>Bootstraps HTML5/CSS3</h3>
+            </div>
+            <div><img src="img/c2.png" />
+                <h3>Fully Responsive</h3>
+            </div>
+            <div><img src="img/c3.PNG" />
+                <h3>Unlimited Color</h3>
+            </div>
+            <div><img src="img/c4.png" />
+                <h3>Banner Slider, Animation</h3>
+            </div>
+            <div><img src="img/c5.PNG" />
+                <h3>Setup & Customize Easily</h3>
+
+            </div>
+            <div><img src="img/c6.PNG" />
+                <h3>Newsletter Popup</h3>
+
+            </div>
+            <div> <img src="img/c7.PNG" />
+                <h3>Megamenus & Sticky Menu</h3>
+
+            </div>
+            <div><img src="img/c8.PNG" />
+                <h3>Product Owl Carousel Slider</h3>
+
+            </div>
+            <div><img src="img/c9.PNG" />
+                <h3>Cartbox & Quickview</h3>
+
+            </div>
+            <div><img src="img/c10.PNG" />
+                <h3>Google font, FontAwesome and Flaticon</h3>
+
+            </div>
+            <div> <img src="img/c11.PNG" />
+                <h3>Cloud Zoom</h3>
+
+            </div>
+            <div><img src="img/c12.PNG" />
+                <h3>Easy Documentation</h3>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <img src="img/d1.jpg" />
+
+
+
+    </footer>
+</body>
+
+</html>

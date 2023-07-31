@@ -1,0 +1,194 @@
+nav{
+    background-color: black;
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav .buy_now{
+    color: white;
+    background-color: #82b440;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 120px;
+    height: 6vh;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-top:3vh ;
+
+}
+
+
+
+/* nav */
+.mid p{
+    right: 500px;
+
+    
+    
+
+  
+}
+.imgdiv{
+    height: 80vh;
+    width: 100%;
+    border: 1px solid red;
+
+    position: relative;
+    display: flex;
+    background-image: url('./img3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+    
+}
+
+.img13img{
+position: absolute;
+bottom: 0px;
+left: 260px;
+}
+
+
+
+.gree_container{
+    width: 100%;
+    height: 15vh;
+    border: 1px solid rgb(26, 2, 2);
+    background-color: rgb(97, 255, 97);
+   
+}
+
+
+.button_container{
+    text-align: center;
+    margin-top:50px;
+
+}
+
+/* slider img */
+
+#slider_img{
+    width: 100%;
+    height: 60vh;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#slider_img .tvholder{
+    width: 25%;
+    height: 300px;
+    background-image: url('./tv4.PNG');
+    background-size:contain;
+    background-repeat:no-repeat ;
+    margin-top: 50px;
+    
+  
+}
+
+
+/* themeFeatures */
+
+#themeFeatures{
+    width: 100%;
+    height: 150vh;
+    border: 1px solid white;
+}
+.tfheading{
+    border: 1px solid rgb(76, 0, 255);
+
+    width: 60%;
+    margin: auto;
+}
+.tfheading_features{
+    font-size: 24px;
+    width: 260px;
+    font-weight: 600;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 11vh;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+/* .cardholder div div{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200vh;
+} */
+.cardholder{
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr;
+    grid-template-rows: 5fr 5fr 5fr;
+    
+}
+.tvholder{
+   position: relative;
+   height: 500px;
+   width: 200px;
+   border: 1px solid white;
+
+}
+.tvholder .img1{
+    border: 2px solid rgb(187, 255, 0);
+ width: 280px;
+ height: 160px;
+ margin-left: 15px;
+margin-top:24PX;
+overflow: hidden;
+position: relative;
+
+
+}
+ .img1 img{
+    position: absolute;
+   top:-0px;
+
+ }
+ .tvholder .img2{
+    border: 2px solid rgb(187, 255, 0);
+ width: 280px;
+ height: 160px;
+ margin-left: 15px;
+margin-top:24PX;
+overflow: hidden;
+position: relative;
+ }
+ .tvholder .img3{
+    border: 2px solid rgb(187, 255, 0);
+ width: 280px;
+ height: 160px;
+ margin-left: 15px;
+margin-top:24PX;
+overflow: hidden;
+position: relative;
+ }
+ /* .mid buttonclass{
+    padding-left: 500px;
+
+ } */
+.get{
+    position: relative;
+    left: 55%;
+    height: 5vh;
+    width: 7%;
+    border-radius: 5px;
+    background-color:coral;
+    top: 0.3%;
+}
